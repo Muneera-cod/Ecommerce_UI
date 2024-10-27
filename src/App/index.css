@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+}
+header{
+   position: sticky;  
+   top: 0;
+   background: white;
+   z-index: 4;
+}
+.borderbottomGray{
+    border-bottom: 4px solid white;
+}
+.borderbottomBlack{
+    border-bottom: 4px solid black;
+
+}
+.bannerBg{
+    background: linear-gradient(91deg, #211C24 0.64%, #211C24 101%);
+}
+.bannerBottomBg{
+    background: linear-gradient(91deg,#211c01  0.64%, #211C24 101%);
+    z-index: 1;
+}
+.banner{
+    background: url('../assets/Images/Banner 2.png') no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    width: 100%;
+}
+.checkbox{
+    accent-color: black;
+}
+
+
+
+/* sm:min-h-[120px] lg:min-h-[95px] */
