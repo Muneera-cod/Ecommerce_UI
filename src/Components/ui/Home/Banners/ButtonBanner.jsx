@@ -1,11 +1,5 @@
 import React from 'react'
-import Banner from '../../../../assets/Images/Banner 2.png'
-import camera from '../../../../assets/Images/Camera.png'
-import smartwatch from '../../../../assets/Images/SmartWatch.png'
-import macbookpro from '../../../../assets/Images/MacBook Pro 14.png'
-import playStation from '../../../../assets/Images/PlayStation.png'
-import AirPod from '../../../../assets/Images/AirpodApple.png'
-import AppleVissionPro from '../../../../assets/Images/AppleVissionPro.png'
+
 function ButtonBanner() {
   return (
     <div className='bannerBottomBg flex flex-col items-center justify-center gap-[40px] min-h-[448px]'>
