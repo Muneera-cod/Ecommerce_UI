@@ -2,7 +2,7 @@ import React from 'react'
 import CardProductPage from './CardProductPage'
 import SelectByRating from './SelectByRating'
 import {IconChevronLeft ,IconChevronRight} from '@tabler/icons-react'
-function Products() {
+function Products({ home , setHome }) {
  
   return (
     <div className='flex flex-col gap-[40px]  w-full'>
@@ -16,7 +16,7 @@ function Products() {
            </div>
         </div>
         <div className='grid sm:grid-cols-2  xl:grid-cols-3 gap-[16px]  w-full place-content-center'>
-            <CardProductPage/>
+            <CardProductPage home={ home } setHome={ setHome }/>
         </div>
       </div>  
       <div className='flex items-center justify-center gap-[16px]'>

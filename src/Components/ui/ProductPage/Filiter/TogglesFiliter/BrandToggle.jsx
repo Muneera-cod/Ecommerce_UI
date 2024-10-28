@@ -1,8 +1,8 @@
 import React from 'react'
 import { IconSearch } from '@tabler/icons-react'
-function BrandToggle() {
+function BrandToggle({ toggle }) {
   return (
-    <div className='flex flex-col gap-[16px]'>
+    <div className={` flex flex-col gap-[16px] ${toggle === 'brand' ? '':'hidden flex flex-col gap-[16px]'}`}>
                     <div className='w-full h-[56px] px-[16px] bg-[#F5F5F5]  gap-[8px] py-[8px] flex items-center rounded-[8px] '>
                     <IconSearch color='#656565' size={15} stroke={3}/><input className='text-#656565  bg-[#F5F5F5]' placeholder='Search'></input>
                     </div>

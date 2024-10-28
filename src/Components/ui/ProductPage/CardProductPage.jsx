@@ -2,18 +2,25 @@ import React from 'react'
 import { IconHeart, IconHeartFilled } from '@tabler/icons-react'
 import { useState } from 'react'
 import { productsData } from './DataCards'
-function CardProductPage() {
+import { useNavigate } from 'react-router-dom'
+function CardProductPage(props) {
     const[like,setLike]=useState(false)
   const[color,setColor]=useState(false)
   const handleLike=(id)=>{
      setLike(id)
      setColor(!color) 
   }
+  const navigate = useNavigate()
   return (
     <>
     {productsData.map((x)=>{
         return(
-    <div key={x.id} className='flex flex-col sm:px-[12px] lg:px-[16px] py-[24px] gap-[16px] bg-cardBg justify-between rounded-[8px]'>
+    <div key={x.id} className='flex flex-col sm:px-[12px] lg:px-[16px] py-[24px] gap-[16px] bg-cardBg justify-between rounded-[8px]' onClick={()=>
+      {
+        props.setHome(2)
+      navigate('ProductDetails')
+    }
+    }>
       <div className='flex  justify-end w-full h-32px '>   
          <IconHeart className='text-secondaryTxt' onClick={()=>handleLike(x.id)}></IconHeart>
       </div>  

@@ -2,14 +2,20 @@ import React from 'react'
 import {IconChevronLeft ,IconChevronRight} from '@tabler/icons-react'
 import ButtonFilter from './Filiter/ForSmallDevice/ButtonFilter'
 import SelectByRating from './SelectByRating'
-
+import { useNavigate } from 'react-router-dom'
 function Topbar(props) {
+  const navigate=useNavigate()
   console.log(props.filter)
+  console.log(props.home)
   return (
     <>
     <div className='sm:hidden lg:flex gap-[16px] sm:px-[20px] md:px-[40px]  xl:px-[160px] py-[40px] items-center '>
-        <p className='text-[16px] font-[500] leading-[16px] '>Home</p>
-        <IconChevronRight></IconChevronRight>
+        <p className='text-[16px] font-[500] leading-[16px]' onClick={()=>{
+          navigate('/')
+          props.setHome(0)
+          }}
+        >Home</p>
+        <IconChevronRight/>
         <p className='text-[16px] font-[500] leading-[16px] '>Category</p>
         <IconChevronRight/>
         <p className='text-[16px] font-[500] leading-[16px] '>Smartphone</p>

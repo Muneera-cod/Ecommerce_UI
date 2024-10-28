@@ -1,17 +1,29 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from '../Components/ui/Home/Home'
-import Main from '../Components/Pages/Main'
-import ProductPage from "../Components/ui/ProductPage/ProductPage";
-export const router =createBrowserRouter([
+import { lazy, Suspense } from "react";
+import Loading from "../Components/ui/Loading";
+import ProductDetailsPage from "../Components/ui/SingleProductPage/ProductDetailsPage";
+const ProductPage=lazy(()=>import("../Components/ui/ProductPage/ProductPage"))
+const Main=lazy(()=>import('../Components/Pages/Main'))
+export const router = createBrowserRouter([
     {
         path:'/',
-        element:<Main/>,
+        element:<Suspense fallback={<Loading/>}><Main/></Suspense>,
         children:[
         
         { 
             path:'/productPage',
-            element:<ProductPage/>
-        }
+            element:<Suspense fallback={<Loading/>}><ProductPage/></Suspense>,
+            children:[
+                {
+                    path:'ProductDetails',
+                    element:<ProductDetailsPage/>
+                }
+            ]
+        },
+        // { 
+        //     path:'/productPage',
+        //     element:<Suspense fallback={<Loading/>}><ProductPage/></Suspense>
+        // }
         ]
     }
 ])

@@ -1,60 +1,66 @@
 
-import iphone14promax from '../../../assets/Images/Iphone 14 pro 1.png'
-import camera from '../../../assets/Images/Camera.png'
-import smartwatch from '../../../assets/Images/SmartWatch.png'
-import headPhone from '../../../assets/Images/Headphone.png'
-import blackWatch from '../../../assets/Images/blackWatch.png'
+import iphone14promaxGold from '../../../assets/Images/Iphone 14 pro 1.png'
+import iphone14promaxDeepPurple from '../../../assets/Images/Iphone 14 pro.png'
+import iphone14silver from '../../../assets/Images/Iphone 14 pro 1 (1).png'
+import iphone14Pink from '../../../assets/Images/Iphone 14 pro 1 (3).png'
+import iphone14promaxWhite from '../../../assets/Images/Iphone 14 pro 1 (2).png'
 import galaxyPhantom from '../../../assets/Images/GalaxyPhantom.png'
 import graphite from '../../../assets/Images/Graphite (1).png'
-import AppleIpad from '../../../assets/Images/AppleIpad.png'
+import iphoneProblack from '../../../assets/Images/Iphone 14 pro  black (2).png'
 
 export const productsData=[
     {
         id:11,
-        img:iphone14promax,
-        product:'Apple iPhone 14 Pro Max 128GB Deep Purple',
+        img:iphone14promaxGold,
+        product:'Apple iPhone 14 Pro 512GB Gold (MQ233)',
         price:'$900'
     },
     {
         id:12,
-        img:camera,
-        product:'Blackmagic Pocket Cinema Camera 6k',
-        price:'$2535'
+        img:iphone14promaxWhite,
+        product:'Apple iPhone 11 128GB White (MQ233)',
+        price:'$510'
     },
     {
         id:13,
-        img:smartwatch,
-        product:'Apple Watch Series 9 GPS 41mm Starlight Aluminium',
-        price:'$399'
+        img:iphone14promaxWhite,
+        product:'Apple iPhone 11 128GB White (MQ233)',
+        price:'$550'
     },
     {
         id:14,
-        img:headPhone,
-        product:'AirPods Max Silver Starlight Aluminium',
-        price:'$549'
+        img:iphone14silver,
+        product:'Apple iPhone 14 Pro 1TB Gold (MQ2V3)',
+        price:'$1499'
     },
     {
         id:15,
-        img:blackWatch,
-        product:'Samsung Galaxy Watch6 Classic 47mm Black',
-        price:'$369'
+        img:iphone14promaxDeepPurple,
+        product:'Apple iPhone 14 Pro 128GB Deep Purple (MQ0G3)',
+        price:'$1600'
     },
     {
         id:16,
-        img:galaxyPhantom,
-        product:'Galaxy Z Fold5 Unlocked | 256GB | Phantom Black',
-        price:'$1799'
+        img:iphone14promaxGold,
+        product:'Apple iPhone 14 Pro 1TB Gold (MQ2V3)',
+        price:'$369'
     },
     {
         id:17,
-        img:graphite,
-        product:'Galaxy Buds FE Graphite',
-        price:'$99.99'
+        img:iphone14Pink,
+        product:'Apple iPhone 13 mini 128GB Pink (MLK23)',
+        price:'$850'
     },
     {
         id:18,
-        img:AppleIpad,
-        product:'Apple iPad 9 10.2" 64GB Wi-Fi Silver (MK2L3) 2021',
-        price:'$398'
+        img:iphoneProblack,
+        product:'Apple iPhone 14 Pro 256GB Space Black (MQ0T3)',
+        price:'$1399'
+    },
+    {
+        id:19,
+        img:iphone14silver,
+        product:'Apple iPhone 14 Pro 256GB Silver (MQ103)',
+        price:'$1399'
     }
 ]

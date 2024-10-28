@@ -1,8 +1,8 @@
 import React from 'react'
 import { IconSearch } from '@tabler/icons-react'
-function PriceToggle() {
+function PriceToggle({ toggle }) {
   return (
-    <div className='flex flex-col gap-[16px]'>
+    <div  className={` flex flex-col gap-[16px] ${toggle === 'price' ? '':'hidden flex flex-col gap-[16px]'}`}>
        <div className='flex flex-col gap-[8px]'>
           <div className='flex justify-between'>
               <p className='text-[#A7A7A7] text-[14px] font-[400] leading-[24px] -tracking-[0.07px]'>From</p>
@@ -23,7 +23,7 @@ function PriceToggle() {
             </div>
           </div>
         </div>
-        <div className='py-[20px]  border-[0.5px] border-[#9F9F9F] '>
+        <div className='py-[20px]  border-[0.5px] border-[#9F9F9F]'>
             
         </div>
     </div>
