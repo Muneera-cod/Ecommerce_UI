@@ -34,7 +34,49 @@ header{
 .checkbox{
     accent-color: black;
 }
+.horizontal-slider{
+    min-width: 100%;
+    max-width: 500px;
+    height: 50px;
+    /* border: 1px solid grey; */
+    border-radius: 5px;
+}
+.horizontal-slider .example-track {
+    top: 20px;
+    height: 10px;
+    border-radius: 5px;
+}
+.example-track.example-track-0 {
+    background: #CECECE;
+    border-radius: 5px;
 
-
-
+}
+.example-track.example-track-1 {
+    background: #CECECE;
+}
+.example-track.example-track-1 {
+    background: #000000;
+}
+.example-track.example-track-4 {
+    background: #CECECE;
+}
+  
+  
+.example-thumb {
+    font-size: 0em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    /* border: 5px solid gray; */
+    box-sizing: border-box;
+    top: 14px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+hr{
+    --hrcolor:linear-gradient(270deg, #000 -1.3%, #E6E6E6 100%);
+    border-top: 1px dashed black;}
 /* sm:min-h-[120px] lg:min-h-[95px] */

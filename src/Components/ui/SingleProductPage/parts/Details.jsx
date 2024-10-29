@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { IconChevronDown } from '@tabler/icons-react'
 function Details() {
   return (
-    <div  className='flex items-center justify-center sm:px-[20px] md:px-[40px] xl:px-[160px] sm:gap-[37px] lg:gap-[48px] sm:py-[40px] lg:py-[80px] bg-[#FAFAFA]'>
+    <div  className='flex items-center justify-center sm:px-[20px] md:px-[40px] xl:px-[160px]  sm:py-[40px] lg:py-[80px] bg-[#FAFAFA]'>
         <div className='flex flex-col sm:px-[24px] md:px-[40px] py-[48px] gap-[32px] bg-white '>
             <div className=''>
                 <p className='text-[24px] font-[500] leading-[32px]'>Details</p>
@@ -34,15 +34,37 @@ function Details() {
                             <p className='text-[16px] font-[400] leading-[24px]'>Screen type</p>
                             <p className='text-[15px] font-[400] leading-[24px]'>OLED</p>
                         </div>
-                        <div className='flex justify-between items-end pb-[8px] border-b-[0.5px] border-[#CDCDCD]'>
+                        <div className='flex justify-between items-start pb-[8px] border-b-[0.5px] border-[#CDCDCD]'>
                             <p className='text-[16px] font-[400] leading-[24px]'>Additionally</p>
-                            <p className='text-[15px] font-[400] leading-[24px]'>6.7"</p>
+                            <p className='text-[15px] font-[400] leading-[24px] text-right'>Dynamic Island
+                                                                             <span className='block'>Always-On display</span>
+                                                                             <span className='block'>HDR display</span>
+                                                                             <span className='block'>True Tone</span>
+                                                                              <span className='block'>Wide color (P3)</span>
+                                                                              </p>
                         </div>
                     </div>
                  </div>
+                 <div className='flex flex-col gap-[16px]'>
+                     <p className='text-[20px] font-[500] leading-[24px]'>CPU</p>
+                     <div className='flex flex-col gap-[24px]'>
+                        <div className='flex justify-between items-end pb-[8px] border-b-[0.5px] border-[#CDCDCD]'>
+                            <p className='text-[16px] font-[400] leading-[24px]'>CPU</p>
+                            <p className='text-[15px] font-[400] leading-[24px]'>A16 Bionic</p>
+                        </div>
+                        <div className='flex justify-between items-end pb-[8px] '>
+                            <p className='text-[16px] font-[400] leading-[24px]'>Number of cores</p>
+                            <p className='text-[15px] font-[400] leading-[24px]'>6</p>
+                        </div>
+                     </div>
+                 </div>
+                
             </div>
-            <div>
-               <button></button>
+            <div className=' flex justify-center items-center'>
+               <button className='flex justify-center items-center px-[56px] py-[12px] gap-[8px] rounded-[8px] border-[1px] border-[#545454]'>
+                  <p className='text-[14px] font-[500] leading-[24px]'>View More</p>
+                  <IconChevronDown/>
+               </button>
             </div>
         </div>
     </div>

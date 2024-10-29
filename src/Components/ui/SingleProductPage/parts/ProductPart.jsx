@@ -4,7 +4,9 @@ import iphone14promaxDeepPurple from '../../../../assets/Images/Iphone 14 pro.pn
 import frontImg from '../../../../assets/Images/image 61.png'
 import backImg from '../../../../assets/Images/image 62.png'
 import sideImg from '../../../../assets/Images/image 63.png'
+import { useNavigate } from 'react-router-dom'
 function ProductPart() {
+   const navigate=useNavigate()
   return (
     <div className='flex sm:flex-col lg:flex-row sm:px-[20px] md:px-[40px]  xl:px-[160px]  sm:gap-[37px] lg:gap-[48px] sm:py-[37px] lg:py-[112px] '>
           <div className='basis-1/2 flex sm:flex-col-reverse lg:flex-row sm:gap-[30.63px] lg:gap-[48px]  items-center'>
@@ -72,9 +74,11 @@ function ProductPart() {
                         lightusing the new systemwith two cameras <a className='underline text-[#2C2C2C]'>more...</a></p>
                   </div>
               </div>
-               <div className='flex sm:flex-col md:flex-row gap-[16px] bg-indigo-50'>
+               <div className='flex sm:flex-col md:flex-row gap-[16px] '>
                  <button className='flex  items-center justify-center md:w-1/2 h-full px-[56px] py-[16px] text-black text-[16px] font-[500] leading-[24px] border-[1px] border-black  rounded-[6px] bg-white'>Add to Wishlist</button> 
-                 <buuton className='flex  items-center justify-center md:w-1/2 h-full px-[56px] py-[16px] text-white text-[16px] font-[400] leading-[24px] rounded-[6px] bg-black'>Add to Card</buuton>
+                 <button onClick={()=>navigate('cart')} className='flex  items-center justify-center md:w-1/2 h-full px-[56px] py-[16px] text-white text-[16px] font-[400] leading-[24px] rounded-[6px] bg-black' >
+                     Add to Card
+                 </button>
               </div>
               <div className='flex gap-[32px] '>
                  <div className='w-1/3 h-full flex sm:flex-col md:flex-row gap-[16px] items-center justify-center'>

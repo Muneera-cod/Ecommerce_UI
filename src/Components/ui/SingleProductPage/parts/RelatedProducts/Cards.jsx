@@ -1,28 +1,15 @@
 import React from 'react'
 import { IconHeart, IconHeartFilled } from '@tabler/icons-react'
-import { useState } from 'react'
-import { productsData } from './DataCards'
-import { useNavigate } from 'react-router-dom'
-function CardProductPage(props) {
-    const[like,setLike]=useState(false)
-  const[color,setColor]=useState(false)
-  const handleLike=(id)=>{
-     setLike(id)
-     setColor(!color) 
-  }
-  const navigate = useNavigate()
+import { productsData } from './Data.js'
+
+function Cards() {
   return (
     <>
     {productsData.map((x)=>{
         return(
-    <div key={x.id} className='flex flex-col sm:px-[12px] lg:px-[16px] py-[24px] gap-[16px] bg-cardBg justify-between rounded-[8px]' onClick={()=>
-      {
-        props.setHome(2)
-      navigate('ProductDetails')
-    }
-    }>
+    <div key={x.id} className='flex flex-col sm:px-[12px] lg:px-[16px] py-[24px] gap-[16px] bg-cardBg justify-between rounded-[8px] ' >
       <div className='flex  justify-end w-full h-32px '>   
-         <IconHeart className='text-secondaryTxt' onClick={()=>handleLike(x.id)}></IconHeart>
+         <IconHeart className='text-secondaryTxt'></IconHeart>
       </div>  
       <div className='flex w-full  justify-center'>
           <img src={x.img} width={'160px'} height={'160px'} className='object-contain '></img>
@@ -35,9 +22,8 @@ function CardProductPage(props) {
             <button className=' flex itms-center justify-center sm:px-[30px] md:px-[40px] lg:px-[60px] py-[12px] gap-[8px] rounded-[8px] bg-black text-white h-fit'>Buy Now</button>
      </div>
     </div>)
-    })}
-    </> 
+    })}</>
   )
 }
 
-export default CardProductPage
+export default Cards

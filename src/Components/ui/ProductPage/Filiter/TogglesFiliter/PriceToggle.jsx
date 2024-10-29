@@ -1,6 +1,8 @@
 import React from 'react'
-import { IconSearch } from '@tabler/icons-react'
+import  ReactSlider  from 'react-slider'
 function PriceToggle({ toggle }) {
+  const [value, setValue] = React.useState([25, 100]);
+
   return (
     <div  className={` flex flex-col gap-[16px] ${toggle === 'price' ? '':'hidden flex flex-col gap-[16px]'}`}>
        <div className='flex flex-col gap-[8px]'>
@@ -23,8 +25,21 @@ function PriceToggle({ toggle }) {
             </div>
           </div>
         </div>
-        <div className='py-[20px]  border-[0.5px] border-[#9F9F9F]'>
-            
+        <div className=' py-[20px]  '>
+        <ReactSlider
+           value={value}
+           onBeforeChange={(value, index) =>
+               console.log(`onBeforeChange: ${JSON.stringify({ value, index })}`)
+           }
+           onChange={(value, index) => console.log(`onChange: ${JSON.stringify({ value, index })}`)}
+           onAfterChange={(value, index) =>
+               console.log(`onAfterChange: ${JSON.stringify({ value, index })}`)
+           }
+           className="horizontal-slider"
+           thumbClassName="example-thumb"
+           trackClassName="example-track"
+           renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
+       />
         </div>
     </div>
   )

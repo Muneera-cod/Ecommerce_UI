@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../../../assets/Images/WhiteLogo.png'
+import Logo from '../../../assets/Images/WhiteLogo.png'
 function Info() {
     const footernavData=[
         { title:'Services',navItems:[

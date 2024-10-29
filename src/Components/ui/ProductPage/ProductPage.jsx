@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Topbar from './Topbar'
 import Products from './Products'
 import Filiter from './Filiter/Filiter'
@@ -10,6 +10,11 @@ function ProductPage() {
   const { home, setHome } = useOutletContext();
   const [filter,setFilter] = useState(false) 
   console.log(home)
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
   return (
     <>
     <Topbar filter={ filter } setFilter={ setFilter }  home={ home } setHome={ setHome }/>
