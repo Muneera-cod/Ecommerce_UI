@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import atmcard from '../../../../../assets/Images/Image 65.png'
+import atmcard from '../../../../../assets/Images/atmcard.png'
 import { useNavigate } from 'react-router-dom'
 function Payement() {
     const[tab,setTab]=useState(0)
