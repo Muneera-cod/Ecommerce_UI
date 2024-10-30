@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IconX,IconPencil } from '@tabler/icons-react'
 import { addresses } from './AddressData'
 function AddressCard() {
+   const [address,setAddress]=useState(addresses)
+   const deleteAddress=(id)=>{
+       let afterdelete=address.filter((item)=>item.id !== id)
+       setAddress(afterdelete)
+   }
   return (
     <>
-    {addresses.map((x)=>{return(
+    {address.map((x)=>{return(
         <div key={x.id} className='p-[24px] flex w-full bg-[#F6F6F6] rounded-[7px]'>
          <div className='flex flex-col gap-[16px] w-full'>
                  <div className='flex sm:gap-[24px] md:gap-[16px] '>
@@ -20,7 +25,7 @@ function AddressCard() {
                 </div> 
          </div>
          <div className='flex gap-[24px] items-center'>
-            <IconPencil color='black'/><IconX/>
+            <IconPencil color='black'/><IconX onClick={()=>deleteAddress(x.id)}/>
          </div>
     </div>)})}
     </>

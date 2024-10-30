@@ -2,6 +2,7 @@ import React ,{ useEffect } from 'react'
 import Top from '../Top'
 import Content from './Content'
 function StepTwo() {
+  
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
