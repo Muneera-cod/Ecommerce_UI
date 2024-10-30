@@ -5,7 +5,7 @@ import playStation from '../../../../assets/Images/PlayStation.png'
 import AirPod from '../../../../assets/Images/Headphone.png'
 import AirPod1 from '../../../../assets/Images/AirpodApple.png'
 import playStation1 from '../../../../assets/Images/PlayStation (2).png'
- import AppleVissionPro from '../../../../assets/Images/Image 36.png'
+ import AppleVissionPro from '../../../../assets/Images/AppleVissionPro1.png'
 import AppleVissionPro1 from '../../../../assets/Images/ApplevissionPro.png'
 function SmallBanner() {
   return (
