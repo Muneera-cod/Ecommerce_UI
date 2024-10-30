@@ -3,16 +3,20 @@ import macbookpro from '../../../../assets/Images/Macbook 1.png'
 import playStation from '../../../../assets/Images/PlayStation.png'
 import AirPod from '../../../../assets/Images/Headphone.png'
 import AirPod1 from '../../../../assets/Images/AirpodApple.png'
-
-import AppleVissionPro from '../../../../assets/Images/Graphite (1).png'
+import playStation1 from '../../../../assets/Images/PlayStation (2).png'
+ import AppleVissionPro from '../../../../assets/Images/Graphite (1).png'
 import AppleVissionPro1 from '../../../../assets/Images/ApplevissionPro.png'
 function SmallBanner() {
   return (
     <div className='flex sm:flex-col lg:flex-row '>
         <div className='basis-1/2  flex flex-col  items-stretch'>
            <div className='flex sm:flex-col lg:flex-row sm:px-[16px] lg:px-[0] sm:py-[40px] lg:py-[0] gap-[24px] items-center justify-center items-stretch h-full w-full'>
-                <div className=' basis-1/2 flex items-center justify-center'><img src={playStation} className='w-[200px] h-[200px]' ></img></div>
-                <div className=' basis-1/2 flex flex-col sm:items-center lg:items-start justify-center  sm:p-[24px] lg:p-[48px] gap-[16px] sm:text-center lg:text-left'>
+                <div className=' basis-1/2 flex items-center items-start sm:justify-center xl:justify-start'>
+                 <img src={playStation} className='sm:block xl:hidden w-[200px] h-[200px]' ></img>
+                 <img src={playStation1} className='sm:hidden xl:block w-[200px] h-[200px]' ></img>
+
+                </div>
+                <div className=' basis-1/2  flex flex-col sm:items-center lg:items-start justify-center  sm:p-[24px] lg:p-[48px] gap-[16px] sm:text-center lg:text-left'>
                     <p className='sm:text-[34px] lg:text-[49px] font-[500] leading-[40px]'>Playstation 5</p>
                     <p className='text-secondaryTxt text-[14px] font-[500] leading-[24px]  line-clamp-3'>Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.</p>
                 </div>
