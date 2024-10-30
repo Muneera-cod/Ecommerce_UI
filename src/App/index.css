@@ -80,3 +80,33 @@ hr{
     --hrcolor:linear-gradient(270deg, #000 -1.3%, #E6E6E6 100%);
     border-top: 1px dashed black;}
 /* sm:min-h-[120px] lg:min-h-[95px] */
+
+
+/* Ensure the carousel container has enough space for the dots */
+.react-multi-carousel-list {
+    padding-bottom: 40px; /* Adds space for the dots below the carousel */
+  }
+  
+  /* Customize dot container */
+  .react-multi-carousel-dot-list {
+    position: relative; /* Position it relatively to the parent */
+    bottom: 0; /* Ensures the dots are at the bottom of the carousel */
+    margin-top: 20px; /* Add some margin if needed */
+    text-align: center; /* Center the dots horizontally */
+  }
+  
+  /* Styling the dots */
+  .react-multi-carousel-dot button {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    border: none;
+    margin: 0 5px;
+  }
+  
+  /* Active dot styling */
+  .react-multi-carousel-dot--active button {
+    background-color: #000; /* Active dot color */
+  }
+  
