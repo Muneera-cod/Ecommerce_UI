@@ -47,7 +47,7 @@ function Info() {
     <div className='flex sm:flex-col lg:flex-row justify-between sm:items-center lg:items-start content-start self-stretch gap-[32px]'>
         <div className='flex flex-col gap-[24px] sm:items-center lg:items-start'>
             <img src={Logo} width={'65.4px'} height={'22.872px'}></img>
-            <p className='text-[#CFCFCF] text-[14px] font-[500] leading-[23.87px] text-footerSecondarytxt'>We are a residential interior design firm located in<br></br> Portland. Our boutique-studio offers more than</p>
+            <p className='sm:text-center lg:text-left w-[384px] text-[#CFCFCF] text-[14px] font-[500] leading-[23.87px] text-footerSecondarytxt'>We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
         </div>
         <nav className='flex sm:flex-col lg:flex-row justify-between sm:items-center lg:items-start gap-[32px]'>
             {footernavData.map((x)=>{

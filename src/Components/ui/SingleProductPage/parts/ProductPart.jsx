@@ -75,7 +75,7 @@ function ProductPart() {
                   </div>
               </div>
                <div className='flex sm:flex-col md:flex-row gap-[16px] '>
-                 <button className='flex  items-center justify-center md:w-1/2 h-full px-[56px] py-[16px] text-black text-[16px] font-[500] leading-[24px] border-[1px] border-black  rounded-[6px] bg-white'>Add to Wishlist</button> 
+                 <button className='flex  items-center justify-center md:w-1/2 h-full px-[50px] py-[16px] text-black text-[16px] font-[500] leading-[24px] border-[1px] border-black  rounded-[6px] bg-white'>Add to Wishlist</button> 
                  <button onClick={()=>navigate('cart')} className='flex  items-center justify-center md:w-1/2 h-full px-[56px] py-[16px] text-white text-[16px] font-[400] leading-[24px] rounded-[6px] bg-black' >
                      Add to Card
                  </button>

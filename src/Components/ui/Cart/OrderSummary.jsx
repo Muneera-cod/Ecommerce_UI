@@ -19,8 +19,8 @@ function OrderSummary() {
                   <div className='flex flex-col gap-[8px]'>
                       <p className='text-[14px] font-[500] leading-[16px] text-[#545454]'>Your bonus card number</p>
                       <div className='flex  p-[16px] items-center rounded-[7px] border-[0.5px] border-[#9F9F9F]'>
-                        <input type='text' className='flex-1' placeholder='Enter Card Number'></input>
-                        <button className='text-[12px] font-[500] leading-[16px] p-[8px] rounded-[6px] border-[1px] border-black'>Apply</button>
+                        <input type='text' className='flex-1 basis-4/5' placeholder='Enter Card Number'></input>
+                        <div className='basis-1/5 flex justify-end'><button className='text-[12px] font-[500] leading-[16px] p-[6px] rounded-[6px] border-[1px] border-black'>Apply</button></div>
                      </div>
                   </div>
                 </div>

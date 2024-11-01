@@ -2,7 +2,7 @@ import React from 'react'
 
 function SelectByRating() {
   return (
-    <select className='w-full'>
+    <select className='w-full bg-white'>
       <option className='text-[15px] font-[400] leading-[16px] -tracking-[.075px]'>By rating</option>
       <option className='text-[15px] font-[400] leading-[16px] -tracking-[.075px]'>By rating</option>
       <option className='text-[15px] font-[400] leading-[16px] -tracking-[.075px]'>By rating</option>
