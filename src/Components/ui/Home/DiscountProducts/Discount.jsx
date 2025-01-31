@@ -7,7 +7,7 @@ function Discount() {
         <div>
             <p className='text-[24px] font-[500] leading-[32px]'>Discounts up to -50%</p>
         </div>
-        <div className='grid sm:grid-cols-2  xl:grid-cols-4 gap-[16px]  w-full place-content-center'>
+        <div className='grid sm:grid-cols-1 md:grid-cols-2  xl:grid-cols-4 gap-[16px]  w-full place-content-center'>
         <Product/>
         </div>
     </div>

@@ -32,7 +32,7 @@ function CardProductPage(props) {
               <p className='text-[16px] font-[500] leading-[24px] line-clamp-2 text-center'>{x.product}</p>
               <p className='text-[24px] font-[600] leading-[24px] tracking-[0.072px]'>{x.price}</p>
             </div>
-            <button className=' flex itms-center justify-center sm:px-[30px] md:px-[40px] lg:px-[60px] py-[12px] gap-[8px] rounded-[8px] bg-black text-white h-fit'>Buy Now</button>
+            <button className=' flex items-center justify-center sm:px-[20px] md:px-[40px] lg:px-[60px] py-[12px] gap-[8px]  rounded-[8px] bg-black text-white h-fit'>Buy Now</button>
      </div>
     </div>)
     })}

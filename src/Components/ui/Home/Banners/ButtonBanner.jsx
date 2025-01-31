@@ -9,7 +9,7 @@ function ButtonBanner() {
 
         <div className='flex flex-col w-full  items-center justify-center text-center'>
             <p className='text-white text-[72px] font-[100] leading-[72px] '>Big Summer <span className='font-[700] sm:block lg:inline text-center'>Sale</span></p>
-           <p className='text-[#787878] text-[16px] font-[400] leading-[32px]'>Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+           <p className='text-[#787878] text-[16px] font-[400] leading-[32px] px-[2px]'>Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
         </div>
         <button className='text-white border-2 border-white px-[56px] py-[16px] items-center justify-center rounded-[6px]'>Shop Now</button>
     </div>

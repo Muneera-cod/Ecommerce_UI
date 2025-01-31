@@ -5,7 +5,7 @@ import playStation from '../../../../assets/Images/PlayStation.png'
 import AirPod from '../../../../assets/Images/Headphone.png'
 import AirPod1 from '../../../../assets/Images/AirpodApple.png'
 import playStation1 from '../../../../assets/Images/PlayStation (2).png'
- import AppleVissionPro from '../../../../assets/Images/AppleVissionPro1.png'
+import AppleVissionPro from '../../../../assets/Images/AppleVissionPro1.png'
 import AppleVissionPro1 from '../../../../assets/Images/ApplevissionPro.png'
 function SmallBanner() {
   return (
@@ -24,7 +24,7 @@ function SmallBanner() {
            </div>
            <div className='flex  sm:flex-col xl:flex-row items-stretch h-full w-full'>
                <div className='flex-1 flex bg-secondaryClr sm:flex-col lg:flex-row sm:px-[16px] lg:px-[0] sm:py-[40px] lg:py-[0] gap-[24px] items-center '>
-                  <div lassName=' basis-1/2 flex items-center justify-center '>
+                  <div className=' basis-1/2 flex items-center justify-center '>
                   <img src={AirPod} className='sm:block xl:hidden max-w-[192px] h-[200px] overflow-hidden' ></img>
                   <img src={AirPod1} className='sm:hidden xl:block max-w-[192px] h-[200px] overflow-hidden' ></img>
 
@@ -51,7 +51,7 @@ function SmallBanner() {
              <p className='sm:text-[34px] lg:text-[64px] font-[100] leading-[56px]'>Macbook <span className='font-[500] lg:block'>Air</span></p>
              <p className='text-secondaryTxt text-[14px] font-[500] leading-[24px]'>The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.
              Shop Now</p>
-             <button className='py-[16px] px-[56px] flex items-center justify-center border-2 border-black text-[16px] font-[500] leading-[24px]  rounded-[8px] w-fit'>Shop Now</button>
+             <button className='sm:py-[10px] md:py-[16px] sm:px-[46px] md:px-[56px] flex items-center justify-center border-2 border-black text-[16px] font-[500] leading-[24px]  rounded-[8px] w-fit'>Shop Now</button>
            </div>
            <img src={macbookpro} className='sm:block xl:hidden '></img>
            <img src={macbookpro1} className='sm:hidden xl:block '/>

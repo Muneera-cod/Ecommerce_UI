@@ -15,7 +15,7 @@ function Products({ home , setHome }) {
              <SelectByRating/>
            </div>
         </div>
-        <div className='grid sm:grid-cols-2  xl:grid-cols-3 gap-[16px]  w-full place-content-center'>
+        <div className='grid sm:grid-cols-2  xl:grid-cols-3 sm:gap-[10px] md:gap-[16px]  w-full place-content-center'>
             <CardProductPage home={ home } setHome={ setHome }/>
         </div>
       </div>  
